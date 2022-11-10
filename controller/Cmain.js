@@ -55,7 +55,7 @@ exports.loginPage = (req, res) => {
 
 exports.signup = (req, res) => {
   Login.signup(req.query, () => {
-    res.send("");
+    res.send(req.query);
   })
 };
 
