@@ -68,7 +68,7 @@ selector("#login_input button").addEventListener('click', () => {
       return 1;
     }
     alert(`"${data.name}"님 환영합니다!`);
-    location.replace("http://localhost:8000/");
+    location.replace("http://115.85.180.7:8000/");
   });
 });
 

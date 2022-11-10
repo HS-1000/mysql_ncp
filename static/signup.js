@@ -77,7 +77,7 @@ sighupBtn.addEventListener('click', () => {
     } else {
       alert("지금 회원가입이 불가합니다");
     }
-    location.replace("http://localhost:8000/loginpage");
+    location.replace("http://115.85.180.7:8000/loginpage");
   });
 
 });
