@@ -1,0 +1,8 @@
+* {
+  box-sizing: border-box;
+}
+a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: royalblue;
+}

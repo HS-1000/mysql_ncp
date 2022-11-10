@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello visitor</title>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <link rel="stylesheet" href="../static/index2_1.css">
+</head>
+<body >
+  <h1>Guest Book</h1>
+  <a href="/"><b>-> Home</b></a>
+  <br><br>
+  <form id="guest_book_input" name="guestBookInput">
+    <legend>방명록</legend>
+    <input type="text" placeholder="User Name" id="user_name" name="userName" max="10" required> <br>
+    <textarea type="text" placeholder="Comment here" id="comment" name="comment" required></textarea> <br>
+    <div id="form_btn_flex">
+      <button type="button" id="submit_btn" onclick="submitAxios();">Submit</button>
+      <div id="edit_btn_flex">
+        <button type="button" id="edit_btn" class="disabled_btn" disabled>Edit comment</button>
+        <button type="button" id="cancel_btn" class="disabled_btn" disabled>Cancel</button>
+      </div>
+    </div>
+  </form>
+  <br><br>
+  <table id="visitor_comments">
+    <thead>
+      <tr>
+        <td>ID</td>
+        <td>wirter</td>
+        <td>comment</td>
+        <td>edit</td>
+        <td>delete</td>
+      </tr>
+    </thead>
+    <tbody>
+      <% for(let i=0; i < guestBooks.length; i++) { %>
+      <tr>
+        <td><%= guestBooks[i].id %></td>
+        <td><%= guestBooks[i].name %></td>
+        <td><%= guestBooks[i].comment %></td>
+        <td><button class="edit_btn">edit</button></td>
+        <td><button class="delete_btn">delete</button></td>
+      </tr>
+      <% } %>
+    </tbody>
+  </table>
+
+  <script src="../static/index2_1.js"></script>
+</body>
+</html>

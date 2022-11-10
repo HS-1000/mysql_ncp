@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+/* visitor table */
+#visitor_comments {
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+}
+#visitor_comments td {
+  margin: 5px;
+}
+/* form buttons */
+button {
+  margin: 5px 0;
+  padding: 8px;
+  border: 0;
+  border-radius: 8px;
+}
+form button {
+  background-color: skyblue;
+  color: white;
+}
+#edit_btn {
+  border-radius: 8px 0 0 8px;
+}
+#cancel_btn {
+  border-radius: 0 8px 8px 0;
+  border-left: 2px solid lightgray;
+}
+#form_btn_flex {
+  display: flex;
+  /* width: 8rem; */
+}
+#edit_btn_flex {
+  display: flex;
+  margin-left: 1rem;
+}
+.disabled_btn {
+  opacity: 0.5;
+}
+/* form input text */
+#user_name {
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 1.2rem;
+  width: 16rem;
+  border-bottom: 2px solid lightgray;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+#comment {
+  width: 16rem;
+  height: 8rem;
+  border: 0;
+  font-size: 1rem;
+  resize: none;
+}
+/* 링크 */
+a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: royalblue;
+}
